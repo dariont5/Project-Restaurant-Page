@@ -1,0 +1,117 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* color theme from chatGPT */
+:root {
+    --warm-amber: #f39c12;
+    --deep-orange: #d35400;
+    --cream: #fdf2e9;
+    --blue: #2c3e50;
+    --coral-red: #e74c3c;
+    --light-grey: #bdc3c7;
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.largest {
+    font-size: 3rem;
+}
+
+.large {
+    font-size: 2rem;
+}
+
+.medium {
+    font-size: 1.25rem;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--coral-red);
+    height: clamp(30px, 40px, 50px)
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+nav > button {
+    flex: 1;
+    background-color: transparent;
+    color: var(--cream);
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+div#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--cream);
+    color: var(--blue);
+}
+
+.swiper {
+    width: clamp(600px, 80%, 15000px);
+    height: clamp(300px, 800px, 10000px);
+    margin-top: 5rem;
+}
+
+.swiper-slide > img {
+    height: 100%;
+    width: 100%;
+}
+
+div.review-section {
+    background-color: var(--warm-amber);
+    padding: 1rem;
+    color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+div.review-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 0.25rem;
+}
+
+div.review {
+    display: flex;
+    flex-direction: column;
+    border: solid var(--blue) 3px;
+    border-radius: 0.75rem;
+    background-color: var(--cream);
+    color: var(--blue);
+    width: 100%;
+    padding: 1rem 0.5rem;
+}
+
+footer {
+    display: flex;
+    background-color: var(--light-grey);
+    color: var(--blue);
+    padding: 1rem;
+    justify-content: space-around;
+}
