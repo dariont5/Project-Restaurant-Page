@@ -31,6 +31,18 @@
     font-size: 1.25rem;
 }
 
+.centered {
+    text-align: center;
+}
+
+.indent {
+    text-indent: 60px;
+}
+
+.para-distance {
+    margin-top: 20px;
+}
+
 h1,
 h2 {
     text-align: center;
@@ -140,4 +152,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.about-container {
+    height: 1300px;
+    width: clamp(80%, 500px, 100%);
 }

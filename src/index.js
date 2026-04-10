@@ -1,6 +1,7 @@
 import "./style.css";
 import setHome from "./home.js";
 import setMenu from "./menu.js";
+import setAbout from "./about.js";
 
 // clear
 function clearContent() {
@@ -23,6 +24,7 @@ menuButton.addEventListener('click', () => {
 const aboutButton = document.querySelector('button.about');
 aboutButton.addEventListener('click', () => {
     clearContent();
+    setAbout();
 })
 
 setHome();
